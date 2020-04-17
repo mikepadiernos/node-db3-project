@@ -52,7 +52,6 @@ function update(changes, id) {
 
 // DELETE
 function remove(id) {
-	const scheme = findById(id);
 	return db('schemes')
 		.where({ id })
 		.delete();
